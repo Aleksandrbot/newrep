@@ -1,0 +1,49 @@
+GET http://localhost:8080/rest/show
+Accept: application/json
+
+###
+
+GET http://localhost:8080/rest/show/1/
+Accept: application/json
+
+###
+
+GET http://localhost:8080/rest/show/2/books
+Accept: application/json
+
+###
+
+POST http://localhost:8080/rest/save
+Content-Type: application/json
+
+{
+  "name": "Имя",
+  "last_name": "Фамилия"
+}
+
+###
+
+POST http://localhost:8080/rest/save/4/books
+Content-Type: application/json
+
+{
+  "book_name" : "Книга"
+}
+
+###
+
+
+
+###
+#GET http://localhost:8080/api/show2
+#Accept: application/json
+#
+####
+#
+#POST http://localhost:8080/api/save2
+#Content-Type: application/json
+#
+#{
+#  "goodCount": 4,
+#  "goodsId": 2
+#}
